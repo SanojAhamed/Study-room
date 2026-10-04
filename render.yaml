@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sanoj-study-room
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: HF_TOKEN
+        sync: false
+      - key: HF_MODEL
+        value: google/gemma-3-4b-it:fastest
+      - key: TRUST_PROXY_HOPS
+        value: "1"
+      - key: NODE_VERSION
+        value: "20"

@@ -1,0 +1,26 @@
+{
+  "name": "sanoj-study-room",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^4.13.30",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "dompurify": "^3.4.16",
+    "dotenv": "^18.0.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.0",
+    "marked": "^18.0.14",
+    "vite": "^7.1.7",
+    "vue": "^3.5.22"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
